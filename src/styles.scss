@@ -1,0 +1,166 @@
+$Background: #282a36;
+$Current: #44475a;
+$Selection: #44475a;
+$Foreground: #f8f8f2;
+$Comment: #6272a4;
+$Cyan: #8be9fd;
+$Green: #50fa7b;
+$Grey: #b6b2b2;
+$Orange: #ffb86c;
+$Pink: #ff79c6;
+$Purple: #bd93f9;
+$Red: #ff5555;
+$Yellow: #f1fa8c;
+
+body,
+input,
+.content-pane-stack,
+.example-usages-reference:after,
+.example-usages-reference:before,
+.lemma-reference:after,
+.original-language-word:after,
+.reference:after,
+.resourcetext,
+.toolbar,
+.toolbar-single,
+.usage-post-text:after,
+.word-and-transliteration > div,
+.word-and-transliteration:after,
+.word-and-transliteration > div span:after,
+.word-by-word-lemma-info span:after,
+.word-by-word-verse-text-unit:after {
+	background: $Background;
+	color: $Foreground;
+}
+
+a,
+.content-pane-stack a,
+.more-link,
+.resourcetext a {
+	color: $Purple;
+
+	&:hover {
+		color: lighten($Purple, 10%);
+	}
+}
+
+header,
+.tab-strip span {
+	background: darken($Background, 10%);
+	color: $Foreground;
+}
+
+header {
+	a:not([href='/']) svg:hover path {
+		fill: $Purple;
+	}
+
+	.text-tab .dropdown-button {
+		color: $Grey;
+
+		&:hover .dropdown-button {
+			color: $Purple;
+		}
+	}
+}
+
+input {
+	border: 1px solid $Pink;
+
+	&[type='text']:focus {
+		box-shadow: 0 0 5px $Green;
+		border: 1px solid $Green;
+	}
+}
+
+p {
+	&[style*='font-size:2.675em'] {
+		color: $Purple;
+	}
+
+	&[style*='font-size:.925em'] {
+		color: $Cyan;
+	}
+}
+
+span[style*='font-size:1.5em'] {
+	color: $Green;
+}
+
+text {
+	fill: $Cyan;
+}
+
+.dropdown-button {
+	color: $Yellow;
+}
+
+.example-usage-reference-text-highlight,
+.search-hit-link {
+	background: $Yellow;
+	color: $Background;
+}
+
+.more-link {
+	font-size: 1.25em;
+}
+
+.sub-tab {
+	&:hover {
+		background: darken($Comment, 10%);
+
+		.sub-tab-title {
+			color: $Purple;
+		}
+
+		.sub-tab-icon svg path {
+			fill: $Purple;
+		}
+	}
+
+	.sub-tab-icon svg path {
+		fill: $Grey;
+	}
+}
+
+.toolbar {
+	.tab-strip .panel-tab-wrapper.selected::before {
+		background: $Pink;
+	}
+
+	.toolbar-top-right-section path {
+		fill: $Pink;
+	}
+}
+
+.ui-autocomplete,
+.tab-dropdown-wrapper {
+	background: $Comment;
+	color: $Foreground;
+}
+
+.ui-autocomplete {
+	path {
+		fill: $Red;
+	}
+
+	.ui-menu-item:hover {
+		background: darken($Comment, 10%);
+
+		span {
+			color: $Purple;
+		}
+	}
+}
+
+.word-by-word-verses {
+	.word-by-word-text-linked {
+		color: $Orange;
+	}
+
+	.word-by-word-text-selected {
+		background: inherit;
+		color: $Green;
+		text-shadow: 0 0 3px $Green;
+	}
+}

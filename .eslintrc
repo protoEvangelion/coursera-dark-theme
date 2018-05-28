@@ -1,0 +1,33 @@
+{
+	"extends": ["eslint:recommended", "prettier"],
+	"plugins": ["prettier"],
+	"env": {
+		"es6": true,
+		"node": true
+	},
+	"globals": {
+		"_": true,
+		"__dirname": true,
+		"module": true,
+		"NODE_ENV": true,
+		"process": true,
+		"require": true
+	},
+	"rules": {
+		"prettier/prettier": "error",
+		"arrow-body-style": 0,
+		"default-case": 0,
+		"global-require": 0,
+		"import/newline-after-import": 0,
+		"import/no-dynamic-require": 0,
+		"import/no-extraneous-dependencies": 0,
+		"import/no-mutable-exports": 0,
+		"import/prefer-default-export": 0,
+		"no-confusing-arrow": 0,
+		"no-console": 0,
+		"no-constant-condition": 0,
+		"no-shadow": 0,
+		"no-unused-vars": 1,
+		"padded-blocks": 0
+	}
+}
