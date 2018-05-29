@@ -45,7 +45,10 @@ button,
 header,
 nav,
 .card-no-action,
+.card-one-clicker,
 .card-rich-interaction,
+.coursera-assess-assessment-in-video,
+.coursera-assess-assessment-in-video-bar,
 .module-section,
 .truncate-gradient {
 	background: darken($Background, 3%);
@@ -70,6 +73,23 @@ i {
 	&.cif-chevron-down,
 	&.fa {
 		color: $Pink;
+	}
+}
+
+.btn-flat-success {
+	background: $Green;
+	color: $Background;
+
+	span {
+		color: $Background;
+	}
+}
+
+.card-one-clicker {
+	border: none;
+
+	&:hover {
+		background: $Background;
 	}
 }
 
@@ -137,9 +157,4 @@ i {
 	&:hover {
 		color: $Purple;
 	}
-}
-
-.week-link-card {
-	background: darken($Background, 2%);
-	border: 1px solid $Cyan;
 }
