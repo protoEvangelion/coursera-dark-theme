@@ -14,153 +14,115 @@ $Yellow: #f1fa8c;
 
 body,
 input,
-.content-pane-stack,
-.example-usages-reference:after,
-.example-usages-reference:before,
-.lemma-reference:after,
-.original-language-word:after,
-.reference:after,
-.resourcetext,
-.toolbar,
-.toolbar-single,
-.usage-post-text:after,
-.word-and-transliteration > div,
-.word-and-transliteration:after,
-.word-and-transliteration > div span:after,
-.word-by-word-lemma-info span:after,
-.word-by-word-verse-text-unit:after {
+select,
+.drawer-open,
+.item-box-content,
+.video-container {
 	background: $Background;
 	color: $Foreground;
 }
 
 a,
-.content-pane-stack a,
-.more-link,
-.resourcetext a {
+button,
+.cif-close {
 	color: $Purple;
 
 	&:hover {
 		color: lighten($Purple, 10%);
 	}
+
+	&.primary {
+		background: $Green;
+		color: $Background;
+	}
 }
 
 header,
-.tab-strip span {
-	background: darken($Background, 10%);
+nav {
+	background: darken($Background, 3%);
 	color: $Foreground;
 }
 
-header {
-	a:not([href='/']) svg:hover path {
-		fill: $Purple;
-	}
+select {
+	border-color: $Pink;
 
-	.text-tab .dropdown-button {
-		color: $Grey;
-
-		&:hover .dropdown-button {
-			color: $Purple;
-		}
+	&:focus {
+		border-color: $Green;
 	}
 }
 
-input {
-	border: 1px solid $Pink;
+span,
+.color-primary-text {
+	color: $Foreground;
+}
 
-	&[type='text']:focus {
-		box-shadow: 0 0 5px $Green;
-		border: 1px solid $Green;
+i {
+	&.cif-circle {
+		color: $Pink;
+	}
+
+	&.fa {
+		color: $Pink;
 	}
 }
 
-p {
-	&[style*='font-size:2.675em'] {
-		color: $Purple;
-	}
+.header-search {
+	border-bottom: 1px solid $Pink;
 
-	&[style*='font-size:.925em'] {
-		color: $Cyan;
-	}
-}
-
-span[style*='font-size:1.5em'] {
-	color: $Green;
-}
-
-text {
-	fill: $Cyan;
-}
-
-.dropdown-button {
-	color: $Yellow;
-}
-
-.example-usage-reference-text-highlight,
-.search-hit-link {
-	background: $Yellow;
-	color: $Background;
-}
-
-.more-link {
-	font-size: 1.25em;
-}
-
-.sub-tab {
-	&:hover {
-		background: darken($Comment, 10%);
-
-		.sub-tab-title {
-			color: $Purple;
-		}
-
-		.sub-tab-icon svg path {
-			fill: $Purple;
-		}
-	}
-
-	.sub-tab-icon svg path {
-		fill: $Grey;
-	}
-}
-
-.toolbar {
-	.tab-strip .panel-tab-wrapper.selected::before {
-		background: $Pink;
-	}
-
-	.toolbar-top-right-section path {
+	path {
 		fill: $Pink;
 	}
-}
 
-.ui-autocomplete,
-.tab-dropdown-wrapper {
-	background: $Comment;
-	color: $Foreground;
-}
-
-.ui-autocomplete {
-	path {
-		fill: $Red;
+	svg {
+		margin-right: 10px;
 	}
 
-	.ui-menu-item:hover {
-		background: darken($Comment, 10%);
+	&.active {
+		border-bottom: 1px solid $Green;
 
-		span {
-			color: $Purple;
+		path {
+			fill: $Green;
 		}
 	}
 }
 
-.word-by-word-verses {
-	.word-by-word-text-linked {
-		color: $Orange;
+.item-box-content {
+	border-color: $Cyan;
+
+	div:nth-of-type(2) {
+		border-color: $Cyan;
+	}
+}
+
+.resources-list {
+	background: $Comment;
+	color: $Foreground;
+
+	.resources-list-item:hover {
+		background: darken($Comment, 10%);
+		color: $Purple;
+	}
+}
+
+.rc-NavSingleItemDisplay {
+	&:hover {
+		background: lighten($Background, 10%);
 	}
 
-	.word-by-word-text-selected {
-		background: inherit;
-		color: $Green;
-		text-shadow: 0 0 3px $Green;
+	&.highlighted {
+		background: lighten($Background, 10%);
 	}
+}
+
+.rc-Phrase {
+	color: darken($Foreground, 10%);
+
+	&:hover {
+		color: $Purple;
+	}
+}
+
+.week-link-card {
+	background: darken($Background, 2%);
+	border: 1px solid $Cyan;
 }
