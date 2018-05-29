@@ -14,9 +14,13 @@ $Yellow: #f1fa8c;
 
 body,
 input,
+main,
 select,
 .drawer-open,
 .item-box-content,
+.rc-CourseNavigation,
+.rc-NavigationLink,
+.rc-WeekCardHeader,
 .video-container {
 	background: $Background;
 	color: $Foreground;
@@ -25,6 +29,7 @@ select,
 a,
 button,
 .cif-close {
+	border: none;
 	color: $Purple;
 
 	&:hover {
@@ -38,7 +43,11 @@ button,
 }
 
 header,
-nav {
+nav,
+.card-no-action,
+.card-rich-interaction,
+.module-section,
+.truncate-gradient {
 	background: darken($Background, 3%);
 	color: $Foreground;
 }
@@ -57,10 +66,8 @@ span,
 }
 
 i {
-	&.cif-circle {
-		color: $Pink;
-	}
-
+	&.cif-circle,
+	&.cif-chevron-down,
 	&.fa {
 		color: $Pink;
 	}
@@ -104,13 +111,23 @@ i {
 	}
 }
 
-.rc-NavSingleItemDisplay {
-	&:hover {
-		background: lighten($Background, 10%);
-	}
+.rc-AssignmentRow:hover,
+.rc-NavigationDrawerLink:hover,
+.rc-NavigationDrawerLink.selected,
+.rc-NavSingleItemDisplay:hover,
+.rc-NavSingleItemDisplay.highlighted,
+.rc-WeekSingleItemDisplay:hover,
+.rc-WeekSingleItemDisplay.highlighted {
+	background: lighten($Background, 10%);
+}
 
-	&.highlighted {
-		background: lighten($Background, 10%);
+.rc-InContextNotification > div {
+	background: darken($Background, 5%);
+	color: $Red;
+	border-color: $Red;
+
+	circle {
+		fill: $Red;
 	}
 }
 
