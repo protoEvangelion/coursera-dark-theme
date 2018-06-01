@@ -16,12 +16,18 @@ body,
 input,
 main,
 select,
+td,
+tr,
 .drawer-open,
 .item-box-content,
+.offering-content,
+.overlay,
+.rc-AboutBox,
 .rc-CourseNavigation,
 .rc-NavigationLink,
 .rc-WeekCardHeader,
-.video-container {
+.video-container,
+.week-body {
 	background: $Background;
 	color: $Foreground;
 }
@@ -50,7 +56,8 @@ nav,
 .coursera-assess-assessment-in-video,
 .coursera-assess-assessment-in-video-bar,
 .module-section,
-.truncate-gradient {
+.truncate-gradient,
+.week-heading {
 	background: darken($Background, 3%);
 	color: $Foreground;
 }
@@ -68,12 +75,21 @@ span,
 	color: $Foreground;
 }
 
-i {
-	&.cif-circle,
-	&.cif-chevron-down,
-	&.fa {
-		color: $Pink;
+table {
+	border: 1px solid $Cyan;
+
+	td,
+	tr {
+		border: 1px solid $Cyan;
+
+		&:nth-child(odd) {
+			background: lighten($Background, 5%);
+		}
 	}
+}
+
+i {
+	color: $Pink;
 }
 
 .btn-flat-success {
@@ -91,6 +107,29 @@ i {
 	&:hover {
 		background: $Background;
 	}
+}
+
+.cdp-rule {
+	border: 1px solid $Cyan;
+}
+
+.c-authenticated-dropdown-menu {
+	background: $Comment;
+	color: $Foreground;
+
+	button {
+		background: $Comment;
+	}
+
+	li:hover a,
+	li:hover button {
+		background: darken($Comment, 5%);
+		color: lighten($Purple, 5%);
+	}
+}
+
+.course-partners {
+	color: $Cyan;
 }
 
 .header-search {
@@ -121,6 +160,10 @@ i {
 	}
 }
 
+.overlay {
+	opacity: 0;
+}
+
 .resources-list {
 	background: $Comment;
 	color: $Foreground;
@@ -141,6 +184,11 @@ i {
 	background: lighten($Background, 10%);
 }
 
+.rc-Help > div {
+	background: darken($Comment, 10%);
+	border: none;
+}
+
 .rc-InContextNotification > div {
 	background: darken($Background, 5%);
 	color: $Red;
@@ -156,5 +204,17 @@ i {
 
 	&:hover {
 		color: $Purple;
+	}
+}
+
+.tab-headline span {
+	border-bottom: 1px solid $Green;
+}
+
+.toggle-link {
+	padding: 0.25rem;
+
+	&.primary {
+		background: transparent;
 	}
 }
