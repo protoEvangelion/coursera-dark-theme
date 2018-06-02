@@ -1,3 +1,5 @@
+/* --- Color Palette --- */
+
 $Background: #282a36;
 $Current: #44475a;
 $Selection: #44475a;
@@ -12,16 +14,22 @@ $Purple: #bd93f9;
 $Red: #ff5555;
 $Yellow: #f1fa8c;
 
+/* --- Backgrounds & Text Colors --- */
+
 body,
 input,
 main,
 select,
 td,
 tr,
+.coursera-assess-question-optionBase label:hover,
+.c-open-single-page-body-container,
+.c-points-box,
 .drawer-open,
 .item-box-content,
 .offering-content,
 .overlay,
+.quiz-attempt-questions-spacer,
 .rc-AboutBox,
 .rc-CourseNavigation,
 .rc-NavigationLink,
@@ -31,6 +39,91 @@ tr,
 	background: $Background;
 	color: $Foreground;
 }
+
+header,
+nav,
+#quiz_result,
+.card-no-action,
+.card-one-clicker,
+.card-rich-interaction,
+.coursera-assess-assessment-in-video,
+.coursera-assess-assessment-in-video-bar,
+.module-section,
+.rc-QuizAttemptHeader,
+.truncate-gradient,
+.week-heading,
+div[data-rc='QuizResults'] {
+	background: darken($Background, 3%);
+	color: $Foreground;
+}
+
+.rc-AssignmentRow:hover,
+.rc-NavigationDrawerLink:hover,
+.rc-NavigationDrawerLink.selected,
+.rc-NavSingleItemDisplay:hover,
+.rc-NavSingleItemDisplay.highlighted,
+.rc-WeekSingleItemDisplay:hover,
+.rc-WeekSingleItemDisplay.highlighted {
+	background: lighten($Background, 10%);
+}
+
+table {
+	td,
+	tr {
+		&:nth-child(odd) {
+			background: lighten($Background, 5%);
+		}
+	}
+}
+
+/* --- Text Colors Only --- */
+
+span,
+.color-primary-text,
+.color-hint-text {
+	color: $Foreground;
+}
+
+.course-partners {
+	color: $Cyan;
+}
+
+i {
+	color: $Pink;
+}
+
+.rc-CompletedItemIcon {
+	.cif-circle {
+		color: $Green;
+	}
+
+	i:nth-child(2) {
+		color: $Background;
+	}
+}
+
+/* --- Borders Only --- */
+
+select {
+	border-color: $Pink;
+
+	&:focus {
+		border-color: $Green;
+	}
+}
+
+table,
+td,
+tr,
+.cdp-rule,
+.c-points-box,
+.item-box-content,
+.item-box-content > div:nth-of-type(2),
+.tab-headline span {
+	border: 1px solid $Cyan;
+}
+
+/* --- Misc --- */
 
 a,
 button,
@@ -46,50 +139,6 @@ button,
 		background: $Green;
 		color: $Background;
 	}
-}
-
-header,
-nav,
-.card-no-action,
-.card-one-clicker,
-.card-rich-interaction,
-.coursera-assess-assessment-in-video,
-.coursera-assess-assessment-in-video-bar,
-.module-section,
-.truncate-gradient,
-.week-heading {
-	background: darken($Background, 3%);
-	color: $Foreground;
-}
-
-select {
-	border-color: $Pink;
-
-	&:focus {
-		border-color: $Green;
-	}
-}
-
-span,
-.color-primary-text {
-	color: $Foreground;
-}
-
-table {
-	border: 1px solid $Cyan;
-
-	td,
-	tr {
-		border: 1px solid $Cyan;
-
-		&:nth-child(odd) {
-			background: lighten($Background, 5%);
-		}
-	}
-}
-
-i {
-	color: $Pink;
 }
 
 .btn-flat-success {
@@ -109,10 +158,6 @@ i {
 	}
 }
 
-.cdp-rule {
-	border: 1px solid $Cyan;
-}
-
 .c-authenticated-dropdown-menu {
 	background: $Comment;
 	color: $Foreground;
@@ -126,10 +171,6 @@ i {
 		background: darken($Comment, 5%);
 		color: lighten($Purple, 5%);
 	}
-}
-
-.course-partners {
-	color: $Cyan;
 }
 
 .header-search {
@@ -152,14 +193,6 @@ i {
 	}
 }
 
-.item-box-content {
-	border-color: $Cyan;
-
-	div:nth-of-type(2) {
-		border-color: $Cyan;
-	}
-}
-
 .overlay {
 	opacity: 0;
 }
@@ -172,16 +205,6 @@ i {
 		background: darken($Comment, 10%);
 		color: $Purple;
 	}
-}
-
-.rc-AssignmentRow:hover,
-.rc-NavigationDrawerLink:hover,
-.rc-NavigationDrawerLink.selected,
-.rc-NavSingleItemDisplay:hover,
-.rc-NavSingleItemDisplay.highlighted,
-.rc-WeekSingleItemDisplay:hover,
-.rc-WeekSingleItemDisplay.highlighted {
-	background: lighten($Background, 10%);
 }
 
 .rc-Help > div {
@@ -207,10 +230,6 @@ i {
 	}
 }
 
-.tab-headline span {
-	border-bottom: 1px solid $Green;
-}
-
 .toggle-link {
 	padding: 0.25rem;
 
@@ -218,3 +237,5 @@ i {
 		background: transparent;
 	}
 }
+
+/* --------------------- */
