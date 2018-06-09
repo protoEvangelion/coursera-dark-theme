@@ -5,17 +5,17 @@
 ![Theme Example Image](/screenshots/1.png)
 
 - [Logos Dark Theme (For Logos Bible Web App)](#logos-dark-theme-for-logos-bible-web-app)
-	- [Minimal Prerequisite](#minimal-prerequisite)
-	- [Building Theme Manually (If you need to make adjustments)](#building-theme-manually-if-you-need-to-make-adjustments)
-		- [Building Prerequisites](#building-prerequisites)
-			- [Install Dependencies](#install-dependencies)
-			- [1. To run the build once run:](#1-to-run-the-build-once-run)
-			- [2. To run the build in watch mode run:](#2-to-run-the-build-in-watch-mode-run)
-	- [Add Styles To Stylish](#add-styles-to-stylish)
-	- [Helpful Plugins to install for your code editor:](#helpful-plugins-to-install-for-your-code-editor)
-		- [Prettier (formatter primarily for JS files)](#prettier-formatter-primarily-for-js-files)
-		- [ESlint (linter)](#eslint-linter)
-		- [EditorConfig (formatter)](#editorconfig-formatter)
+  - [Minimal Prerequisite](#minimal-prerequisite)
+  - [Building Theme Manually (If you need to make adjustments)](#building-theme-manually-if-you-need-to-make-adjustments)
+    - [Building Prerequisites](#building-prerequisites)
+      - [Install Dependencies](#install-dependencies)
+      - [1. To run the build once run:](#1-to-run-the-build-once-run)
+      - [2. To run the build in watch mode run:](#2-to-run-the-build-in-watch-mode-run)
+  - [Add Styles To Stylish](#add-styles-to-stylish)
+  - [Helpful Plugins to install for your code editor:](#helpful-plugins-to-install-for-your-code-editor)
+    - [Prettier (formatter primarily for JS files)](#prettier-formatter-primarily-for-js-files)
+    - [ESlint (linter)](#eslint-linter)
+    - [EditorConfig (formatter)](#editorconfig-formatter)
 
 ## Minimal Prerequisite
 

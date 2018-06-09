@@ -22,6 +22,7 @@ main,
 select,
 td,
 tr,
+.ace_gutter,
 .coursera-assess-question-optionBase label:hover,
 .c-open-single-page-body-container,
 .c-points-box,
@@ -36,8 +37,8 @@ tr,
 .rc-WeekCardHeader,
 .video-container,
 .week-body {
-	background: $Background;
-	color: $Foreground;
+  background: $Background;
+  color: $Foreground;
 }
 
 header,
@@ -53,27 +54,33 @@ nav,
 .truncate-gradient,
 .week-heading,
 div[data-rc='QuizResults'] {
-	background: darken($Background, 3%);
-	color: $Foreground;
+  background: darken($Background, 3%);
+  color: $Foreground;
 }
 
 .rc-AssignmentRow:hover,
+.rc-CodeBlock,
+.rc-CodeEvaluatorOutput,
 .rc-NavigationDrawerLink:hover,
 .rc-NavigationDrawerLink.selected,
 .rc-NavSingleItemDisplay:hover,
 .rc-NavSingleItemDisplay.highlighted,
 .rc-WeekSingleItemDisplay:hover,
 .rc-WeekSingleItemDisplay.highlighted {
-	background: lighten($Background, 10%);
+  background: lighten($Background, 10%);
+}
+
+.color-success-dark {
+  color: $Green;
 }
 
 table {
-	td,
-	tr {
-		&:nth-child(odd) {
-			background: lighten($Background, 5%);
-		}
-	}
+  td,
+  tr {
+    &:nth-child(odd) {
+      background: lighten($Background, 5%);
+    }
+  }
 }
 
 /* --- Text Colors Only --- */
@@ -81,35 +88,35 @@ table {
 span,
 .color-primary-text,
 .color-hint-text {
-	color: $Foreground;
+  color: $Foreground;
 }
 
 .course-partners {
-	color: $Cyan;
+  color: $Cyan;
 }
 
 i {
-	color: $Pink;
+  color: $Pink;
 }
 
 .rc-CompletedItemIcon {
-	.cif-circle {
-		color: $Green;
-	}
+  .cif-circle {
+    color: $Green;
+  }
 
-	i:nth-child(2) {
-		color: $Background;
-	}
+  i:nth-child(2) {
+    color: $Background;
+  }
 }
 
 /* --- Borders Only --- */
 
 select {
-	border-color: $Pink;
+  border-color: $Pink;
 
-	&:focus {
-		border-color: $Green;
-	}
+  &:focus {
+    border-color: $Green;
+  }
 }
 
 table,
@@ -120,7 +127,7 @@ tr,
 .item-box-content,
 .item-box-content > div:nth-of-type(2),
 .tab-headline span {
-	border: 1px solid $Cyan;
+  border: 1px solid $Cyan;
 }
 
 /* --- Misc --- */
@@ -128,114 +135,114 @@ tr,
 a,
 button,
 .cif-close {
-	border: none;
-	color: $Purple;
+  border: none;
+  color: $Purple;
 
-	&:hover {
-		color: lighten($Purple, 10%);
-	}
+  &:hover {
+    color: lighten($Purple, 10%);
+  }
 
-	&.primary {
-		background: $Green;
-		color: $Background;
-	}
+  &.primary {
+    background: $Green;
+    color: $Background;
+  }
 }
 
 .btn-flat-success {
-	background: $Green;
-	color: $Background;
+  background: $Green;
+  color: $Background;
 
-	span {
-		color: $Background;
-	}
+  span {
+    color: $Background;
+  }
 }
 
 .card-one-clicker {
-	border: none;
+  border: none;
 
-	&:hover {
-		background: $Background;
-	}
+  &:hover {
+    background: $Background;
+  }
 }
 
 .c-authenticated-dropdown-menu {
-	background: $Comment;
-	color: $Foreground;
+  background: $Comment;
+  color: $Foreground;
 
-	button {
-		background: $Comment;
-	}
+  button {
+    background: $Comment;
+  }
 
-	li:hover a,
-	li:hover button {
-		background: darken($Comment, 5%);
-		color: lighten($Purple, 5%);
-	}
+  li:hover a,
+  li:hover button {
+    background: darken($Comment, 5%);
+    color: lighten($Purple, 5%);
+  }
 }
 
 .header-search {
-	border-bottom: 1px solid $Pink;
+  border-bottom: 1px solid $Pink;
 
-	path {
-		fill: $Pink;
-	}
+  path {
+    fill: $Pink;
+  }
 
-	svg {
-		margin-right: 10px;
-	}
+  svg {
+    margin-right: 10px;
+  }
 
-	&.active {
-		border-bottom: 1px solid $Green;
+  &.active {
+    border-bottom: 1px solid $Green;
 
-		path {
-			fill: $Green;
-		}
-	}
+    path {
+      fill: $Green;
+    }
+  }
 }
 
 .overlay {
-	opacity: 0;
+  opacity: 0;
 }
 
 .resources-list {
-	background: $Comment;
-	color: $Foreground;
+  background: $Comment;
+  color: $Foreground;
 
-	.resources-list-item:hover {
-		background: darken($Comment, 10%);
-		color: $Purple;
-	}
+  .resources-list-item:hover {
+    background: darken($Comment, 10%);
+    color: $Purple;
+  }
 }
 
 .rc-Help > div {
-	background: darken($Comment, 10%);
-	border: none;
+  background: darken($Comment, 10%);
+  border: none;
 }
 
 .rc-InContextNotification > div {
-	background: darken($Background, 5%);
-	color: $Red;
-	border-color: $Red;
+  background: darken($Background, 5%);
+  color: $Red;
+  border-color: $Red;
 
-	circle {
-		fill: $Red;
-	}
+  circle {
+    fill: $Red;
+  }
 }
 
 .rc-Phrase {
-	color: darken($Foreground, 10%);
+  color: darken($Foreground, 10%);
 
-	&:hover {
-		color: $Purple;
-	}
+  &:hover {
+    color: $Purple;
+  }
 }
 
 .toggle-link {
-	padding: 0.25rem;
+  padding: 0.25rem;
 
-	&.primary {
-		background: transparent;
-	}
+  &.primary {
+    background: transparent;
+  }
 }
 
 /* --------------------- */
