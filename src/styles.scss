@@ -50,6 +50,7 @@ nav,
 .coursera-assess-assessment-in-video,
 .coursera-assess-assessment-in-video-bar,
 .module-section,
+.rc-PageHeader > div,
 .rc-QuizAttemptHeader,
 .truncate-gradient,
 .week-heading,
@@ -72,6 +73,23 @@ div[data-rc='QuizResults'] {
 
 .color-success-dark {
   color: $Green;
+}
+
+.mega-menu-container > div {
+  background: darken($Comment, 5%);
+  color: $Foreground;
+}
+
+.rc-ExploreButton {
+  background: $Cyan;
+
+  i {
+    color: $Foreground;
+  }
+}
+
+.rc-MegaMenuItem.selected {
+  background: $Comment;
 }
 
 table {
